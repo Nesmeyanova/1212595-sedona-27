@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Kristina Nesmeyanova](https://up.htmlacademy.ru/htmlcss/27/user/1212595).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мирошниченко] (https://htmlacademy.ru/profile/id591417).
 
 ---
 
