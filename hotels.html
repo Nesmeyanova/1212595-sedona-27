@@ -7,7 +7,7 @@
    <body>
       <header>
          <nav>
-            <a href="index.html"><img src="img/*" alt="Логотип Siti of Sedona"></a>
+            <a href="index.html"><img src="img/logo.svg" width="100" height="50" alt="Логотип Siti of Sedona"></a>
             <ul>
                <li><a href="">Информация</a></li>
                <li><a href="">Фото и видео</a></li>
@@ -20,7 +20,7 @@
          <h1>Поиск гостиницы в Седоне</h1>
          <!-- скрыть -->
          <section>
-            <form action="echo.htmlacademy.ru" method="get">
+            <form action="https://echo.htmlacademy.ru" method="get">
                <fieldset>
                   <legend>Инфраструктура:</legend>
                   <ul>
@@ -55,12 +55,22 @@
                      </li>
                   </ul>
                </fieldset>
+               <fieldset>
+                  <legend>Стоимость в сутки (Р):</legend>
+                  <table>
+                     <tr>
+                        <td>От 0</td>
+                        <td>До 3000</td>
+                     </tr>
+                  </table>
+                  <a href="#">Показать</a>
+                  <input type="range" min="0" max="3000" name="cost">
+               </fieldset>
             </form>
          </section>
          <p>Найдено: 3</p>
          <div>
             <h3>Cортировка:</h3>
-            >
             <ul>
                <li>
                   <a href="">По цене</a>
@@ -72,10 +82,10 @@
                   <a href="">По рейтингу</a>
                </li>
                <li>
-                  <a href=""><img src="" alt="По возрастанию"></a>
+                  <a href=""><img src="#" alt="По возрастанию"></a>
                </li>
                <li>
-                  <a href=""><img src="" alt="По убыванию"></a>
+                  <a href=""><img src="#" alt="По убыванию"></a>
                </li>
             </ul>
          </div>
@@ -83,7 +93,7 @@
             <ul>
                <li>
                   <p>
-                     <a href=""><img src="#" width="" height="" alt="Фотография Amara Resort & Spa"></a>
+                     <a href=""><img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Фотография Amara Resort & Spa"></a>
                   </p>
                   <h2>Amara Resort & Spa</h2>
                   <table>
@@ -98,7 +108,7 @@
                </li>
                <li>
                   <p>
-                     <a href=""><img src="#" width="" height="" alt="Фотография Desert Quail Inn"></a>
+                     <a href=""><img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Фотография Desert Quail Inn"></a>
                   </p>
                   <h2>Desert Quail Inn</h2>
                   <table>
@@ -108,12 +118,12 @@
                      </tr>
                   </table>
                   <a href="#">Подробнее</a>
-                  <button type="button">Забронировать</button>
+                  <a href="#">Забронировать</a>
                   <span class="rating">Рейтинг:8,9</span>
                </li>
                <li>
                   <p>
-                     <a href=""><img src="#" width="" height="" alt="Villas at Poco Diablo"></a>
+                     <a href=""><img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo"></a>
                   </p>
                   <h2>Villas at Poco Diablo</h2>
                   <table>
@@ -123,7 +133,7 @@
                      </tr>
                   </table>
                   <a href="#">Подробнее</a>
-                  <button type="button">Забронировать</button>
+                  <a href="#">Забронировать</a>
                   <span class="rating">Рейтинг:9,2</span>
                </li>
             </ul>
@@ -131,7 +141,7 @@
       </main>
       <footer>
          <p>#visitsedona</p>
-         <a href="tel:+74956660266">+7(495) 666-02-66</a>
+         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
          <div>
             <ul>
                <li><a href="#">Твиттер</a></li>
@@ -140,7 +150,7 @@
             </ul>
          </div>
          <p>Website by</p>
-         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="#" alt="Логотип HTML Академии"></a>
+         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-htmla.svg" width="115" height="41" alt="Логотип HTML Академии"></a>
       </footer>
    </body>
 </html>
