@@ -10,7 +10,7 @@
    <body>
       <header class="main-header">
          <nav class="main-navigation">
-            <a class="main-header-logo"><img src="img/logo.svg" width="100" height="50" alt="Логотип Siti of Sedona"></a>
+            <a class="main-header-logo"><img src="img/logo.svg" width="140" height="72" alt="Логотип Siti of Sedona"></a>
             <ul class="site-navigation">
                <li><a href="">Информация</a></li>
                <li><a href="">Фото и видео</a></li>
@@ -29,42 +29,43 @@
          </div>
          <section class="advantages">
             <ol class="advantages-list">
-               <li class="advantages-item">
-                  <h3>Настоящий городок </h3>
+               <li class="advantages-item reason1">
+                  <div><h3>Настоящий городок </h3>
                   <p>№1</p>
-                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
+                  <div class="feature-picture"><img src="feature-picture1.jpg" width="800"></div>
                </li>
-               <li class="advantages-item">
+               <li class="advantages-item reason2">
                   <h3>Там есть мост дьявола</h3>
                   <p>№2</p>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                </li>
-               <li class="advantages-item">
+               <li class="advantages-item reason3">
                   <h3>Небольшая площадь</h3>
                   <p>№3</p>
                   <p>Все достопримечательности находятся очень близко</p>
                </li>
-               <li class="advantages-item">
+               <li class="advantages-item reason4">
                   <h3>Красивая дорога</h3>
                   <p>№4</p>
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                </li>
-               <li class="advantages-item">
+               <li class="advantages-item reason5">
                   <h3>Мало туристов</h3>
                   <p>№5</p>
                   <p>Большинство едет в гранд каньон и толпится там</p>
                </li>
                <li>
                   <ul class="features-list">
-                     <li class="features-item ">
+                     <li class="features-item house">
                         <h3>Жильё</h3>
                         <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                      </li>
-                     <li class="features-item">
+                     <li class="features-item food">
                         <h3>Еда</h3>
                         <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                      </li>
-                     <li class="features-item">
+                     <li class="features-item gift">
                         <h3>Сувениры</h3>
                         <p>Не только китайского, но и местного производства!</p>
                      </li>
@@ -74,12 +75,13 @@
          </section>
          <section>
             <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
-            <p>Заинтересовались?</p>
+            <p class="interested">Заинтересовались?</p>
             <p>Укажите предполагаемые даты поездки,<br>
                и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
          </section>
-         <button class="button-search-form brown-button button" type="button">Поиск гостиницы в Седоне</button>
+         <section class="search-form">
+            <button class="button-search-form brown-button button" type="button">Поиск гостиницы в Седоне</button>
          <form action="https://echo.htmlacademy.ru" method="post">
             <p>
                <label for="check-in-date">Дата заезда</label>
@@ -99,6 +101,7 @@
             </p>
             <button class="button-to-find blue-button button" type="submit">Найти</button>
          </form>
+         </section>
       </main>
       <footer class="main-footer">
          <p class="footer-contacts"> #visitSEDONA <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
