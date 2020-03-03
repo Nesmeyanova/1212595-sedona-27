@@ -29,44 +29,41 @@ body {
 }
 
 .main-header {
-	background-image: url("../img/polygon.png"), url("../img/background-photo.jpg");
-	background-position: bottom center, top center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 1200px 59px, 1200px 773px;
+	background-image: url("../img/background-photo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 1200px 800px;
 }
 
 .advantage-item h3 {
 	font-weight: bold;
 }
 
-.interested-section {
-	width: 434px;
-	height: 96px;
-	margin: o auto; /*не работает*/
-}
-
-.interested-section p {
+.button-form {
 	text-align: center;
+	background-color: #ffffff;
+
+}
+.interested-section {
+	width: 435px;
+	margin: 0 auto;
+	
+
 }
 
-.interested {
+.interested-title {
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 36px;
+	margin: 0;
 }
 
-.map {
-	background-image: url("../img/map.jpg");
-	width: 1200px;
-	height: 593px;
-}
-.search-form {
+.search-form form {
 	font-weight: bold;
 	position: absolute;
 	top: 100%;
 	left: 50%;
 	transform: translateX(-50%);
-	background-image: url(../img/map.jpg);
 }
 
 .button {
@@ -114,8 +111,6 @@ body {
 	color: #000000;
 
 	background-color: #ffffff;
-
-	display: flex;
 }
 
 .main-header-logo {
@@ -127,26 +122,23 @@ body {
 .site-navigation {
 	list-style: none;
 	font-weight: bold;
-	font-size: 14px;
-	line-height: 26px;
 	display: flex;
+	
 }
 
-.site-navigation li {
-	width: 239px;
-	height: 56px;
-}
-
-.site-navigation li:nth-child (3) {
-	margin-left: auto; /*что-то не работает*/
+.site-navigation li:nth-child(3) {
+	margin-left: auto;
 	
 }
 
 .site-navigation a {
-	padding: 22px auto;
 	vertical-align: middle;
+	font-size: 14px;
+	line-height: 26px;
 	color: #000000;
 	text-decoration: none;
+	padding: 22px 0px; /*не работает*/
+
 }
 
 .site-navigation a:hover {
@@ -162,27 +154,27 @@ body {
 }
 .welcome {
 	text-align: center;
-	padding: 60 auto;
+	padding: 77px 0px;
 	position: relative;
+	margin: 0;
 }
 
 .description {
+	background-color: #ffffff;
 	text-align: center;
-	width: 1200px;
-	height: 216px;
-	/*background-color: #ffffff;*/
-
+	padding: 55px 20px;
 }
 
-.description h1 {
+.description-title {
 	width: 440px;
 	height: 48px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0 auto;
 }
 
-.description p {
+.description-text {
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -190,7 +182,6 @@ body {
 .advantages h3 {
 	font-size: 21px;
 	line-height: 21px;
-	background-image: url("../img/icon-1.svg")
 
 }
 
@@ -199,15 +190,22 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 0;
+	margin: 0;
 }
 
 .features-list {
+	order: 2;
+}
+
+.features-list ul {
 	list-style: none;
 	color: black;
 	background-color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	padding: 0;
 }
 
 .features-item {
@@ -223,24 +221,39 @@ body {
 
 .reason-1,
 .reason-2 {
+	position: relative;
 	color: #ffffff;
 	background-color: #81b3d2;
 	width: 100%;
-
 }
 
 .reason-1 {
-	padding-right: 66%
+	padding-right: 66%;
+	order: 1;
+}
+
+.reason-1 img {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .reason-2 {
-	padding-left: 66%
+	padding-left: 66%;
+	order: 3;
+}
+
+.reason-2 img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .reason-3,
 .reason-4,
 .reason-5 {
 	background-color: #eeeeee;
+	order: 3;
 }
 
 .number-of-people {
@@ -252,10 +265,12 @@ body {
 }
 
 .button-search-form {
+	position: relative;
 	width: 568px;
 	height: 86px;
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0 auto;
 }
 
 .button-to-find {
@@ -425,4 +440,8 @@ body {
 
 .catalog-item {
 	display: flex;
+}
+
+.rating {
+	margin-left: auto;
 }

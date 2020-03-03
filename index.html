@@ -7,9 +7,8 @@
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
-   <div class="conyainer">
       <body>
-      <header class="main-header">
+      <header class="main-header container">
          <nav class="main-navigation">
             <a class="main-header-logo"><img src="img/logo.svg" width="140" height="72" alt="Логотип Siti of Sedona"></a>
             <ul class="site-navigation">
@@ -19,26 +18,27 @@
                <li><a href="">Гостиницы</a></li>
             </ul>
          </nav>
-         <p class="welcome"><img src="img/welcome.svg" width="459" height="353" alt="Welcome"></p>
-         <div class="description">
-            <h1>Седона — небольшой городок в Аризоне,
-               заслуживающий большего!
-            </h1>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-         </div>
+         <p class="welcome"><img src="img/welcome.svg" width="459" height="353" alt="Приветственная надпись"></p>
       </header>
       <main class="container">
+          <section class="description">
+            <p class="description-title">Седона — небольшой городок в Аризоне,
+               заслуживающий большего!</p>
+            <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+         </section>
          <section class="advantages">
             <ol class="advantages-list">
                <li class="advantages-item reason-1">
                   <h3>Настоящий городок </h3>
                   <p>№1</p>
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <img src="img/feature-picture1.jpg" width="800" height="256" alt="Фотография города">
                </li>
                <li class="advantages-item reason-2">
                   <h3>Там есть мост дьявола</h3>
                   <p>№2</p>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                  <img src="img/feature-picture2.jpg" width="800" height="256" alt="Мост дьявола">
                </li>
                <li class="advantages-item reason-3">
                   <h3>Небольшая площадь</h3>
@@ -55,8 +55,8 @@
                   <p>№5</p>
                   <p>Большинство едет в гранд каньон и толпится там</p>
                </li>
-               <li>
-                  <ul class="features-list">
+               <li class="features-list">
+                  <ul>
                      <li class="features-item house">
                         <img src="img/icon-1.svg">
                         <h3>Жильё</h3>
@@ -76,19 +76,18 @@
                </li>
             </ol>
          </section>
-         <section class="button-form">
-            <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
+         <section class="search-form">
+            <div class="button-form">
+               <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
             <div class="interested-section">
-               <p class="interested">Заинтересовались?</p>
+               <p class="interested-title">Заинтересовались?</p>
                <p>Укажите предполагаемые даты поездки,<br>
-               и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
+               и мы покажем вам лучшие предложения гостиниц в Седоне </p>
             </div>
             <button class="button-search-form brown-button button" type="button">Поиск гостиницы в Седоне</button>
-         </section>
-         <div class="map">
-            <section class="search-form">
-         <form action="https://echo.htmlacademy.ru" method="post">
+            </div>
+            <img src="img/map.jpg" width="1200" height="594" alt="Карта проезда">
+            <form action="https://echo.htmlacademy.ru" method="post">
             <p>
                <label for="check-in-date">Дата заезда</label>
                <input type="date" name="check-in" id="check-in-date" value="24 апреля 2017">
@@ -112,10 +111,8 @@
             <button class="button-to-find blue-button button" type="submit">Найти</button>
          </form>
          </section>
-         </div>
-         
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer container">
          <p class="footer-contacts"> #visitSEDONA <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
          </p>
          <div class="footer-social">
