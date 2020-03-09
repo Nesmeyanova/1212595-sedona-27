@@ -60,7 +60,8 @@ a {
 }
 .interested-section {
 	width: 435px;
-	margin: 0 auto;	
+	margin: 0 auto;
+	padding-top: 57px;
 
 }
 
@@ -69,23 +70,6 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0;
-}
-
-.button-search-form {
-	position: relative;
-	width: 568px;
-	height: 86px;
-	font-size: 21px;
-	line-height: 26px;
-	margin: 0 auto;
-}
-
-.search-form form {
-	font-weight: bold;
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
 }
 
 .button {
@@ -145,6 +129,7 @@ a {
 	list-style: none;
 	font-weight: bold;
 	display: flex;
+	margin: 0;
 	
 }
 
@@ -159,7 +144,11 @@ a {
 	line-height: 26px;
 	color: #000000;
 	text-decoration: none;
-	padding: 22px 0px; /*не работает*/
+	display: inline-block;
+	padding: 22px 0px;
+	width: 239px;
+	height: 56px;
+	text-align: center;
 
 }
 
@@ -228,6 +217,8 @@ a {
 	flex-wrap: wrap;
 	width: 100%;
 	padding: 0;
+	padding-top: 46px;
+	padding-bottom: 86px;
 }
 
 .features-item {
@@ -252,6 +243,7 @@ a {
 .reason-1 {
 	padding-right: 66%;
 	order: 1;
+	padding-top: 46px;
 }
 
 .reason-1 img {
@@ -263,6 +255,7 @@ a {
 .reason-2 {
 	padding-left: 66%;
 	order: 3;
+	padding-top: 49px;
 }
 
 .reason-2 img {
@@ -276,14 +269,36 @@ a {
 .reason-5 {
 	background-color: #eeeeee;
 	order: 3;
+	padding-top: 50px;
 }
 
 .number-of-people {
 	border: none; /*не работает*/
 	background-color: #f2f2f2; 
 }
-.number-of-children {
 
+.search-form {
+	position: relative;
+}
+
+.button-search-form {
+	position: relative;
+	width: 568px;
+	height: 86px;
+	font-size: 21px;
+	line-height: 26px;
+	margin: 0 auto;
+}
+
+.search-form form {
+	font-weight: bold;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffffff;
+	background-size: 568px 395px;
+	padding: 55px;
 }
 
 .button-to-find {
@@ -299,16 +314,19 @@ a {
 	background-color: #ffffff;
 	display: flex;
 	margin-top: -120px;
+	justify-content: space-between;
 }
 
 .footer-contacts {
 	font-weight: bold;
 	width: 223px; 
+	display: block;
 }
 
 .footer-contacts a {
 	color: #000000;
 	text-decoration: none;
+	display: block;
 }
 
 .footer-social {
@@ -345,6 +363,7 @@ a {
 
 .footer-copyright a {
 	color: #000000;
+
 }
 
 .footer-copyright a:hover {
@@ -362,6 +381,9 @@ a {
 	display: flex;
 	justify-content: space-around;
 	background-image: url("..//img/filter-background.jpg");
+	background-size: cover;
+	background-position: 50%;
+	padding-top: 
 }
 
 .filter fieldset {
