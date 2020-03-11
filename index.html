@@ -15,7 +15,7 @@
                <li><a href="">Информация</a></li>
                <li><a href="">Фото и видео</a></li>
                <li><a href="">Карта штата</a></li>
-               <li><a href="">Гостиницы</a></li>
+               <li><a href="hotels.html">Гостиницы</a></li>
             </ul>
          </nav>
          <p class="welcome"><img src="img/welcome.svg" width="459" height="353" alt="Приветственная надпись"></p>
@@ -29,13 +29,13 @@
          <section class="advantages">
             <ol class="advantages-list">
                <li class="advantages-item reason-1">
-                  <h3>Настоящий городок </h3>
+                  <h3>Настоящий<br>городок </h3>
                   <p>№1</p>
                   <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   <img src="img/feature-picture1.jpg" width="800" height="256" alt="Фотография города">
                </li>
                <li class="advantages-item reason-2">
-                  <h3>Там есть мост дьявола</h3>
+                  <h3>Там есть<br>мост дьявола</h3>
                   <p>№2</p>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                   <img src="img/feature-picture2.jpg" width="800" height="256" alt="Мост дьявола">
@@ -46,12 +46,12 @@
                   <p>Все достопримечательности находятся очень близко</p>
                </li>
                <li class="advantages-item reason-4">
-                  <h3>Красивая дорога</h3>
+                  <h3>Красивая<br>дорога</h3>
                   <p>№4</p>
                   <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                </li>
                <li class="advantages-item reason-5">
-                  <h3>Мало туристов</h3>
+                  <h3>Мало<br>туристов</h3>
                   <p>№5</p>
                   <p>Большинство едет в гранд каньон и толпится там</p>
                </li>
@@ -95,24 +95,30 @@
                <label for="check-out-date">Дата выезда</label>
                <input type="date" name="check-out" id="check-out-date" value="4 июля 2017">
             </p>
-            <p class="number-of-people">
+            <div class="number-of-people">
+               <p class="adult">
                <label for="number-of-people">Взрослые</label>
-               <input type="button" name="add" id="number-of-people">
-               <input type="text" name="people" id="number-of-people">
-               <input type="button" name="reduce" id="number-of-people">
+               <div class="add-reduce">
+                 <input type="button" name="add" id="number-of-people">
+                  <input type="text" name="people" id="number-of-people">
+                  <input type="button" name="reduce" id="number-of-people"> 
+               </div>
             </p>
-            <p class="number-of-children">
+            <p class="children">
                <label for="number-of-children">Дети</label>
-               <input type="button" name="add" id="number-of-children">
-               <input type="number" name="children" id="number-of-children">
-               <input type="button" name="reduce" id="number-of-children">
+               <div class="add-reduce">
+                  <input type="button" name="add" id="number-of-children">
+                  <input type="text" name="children" id="number-of-children">
+                  <input type="button" name="reduce" id="number-of-children">
+               </div>
             </p>
+            </div>
             <button class="button-to-find blue-button button" type="submit">Найти</button>
          </form>
          </section>
          <img src="img/map.jpg" width="1200" height="594" alt="Карта проезда">
       </main>
-      <footer class="main-footer container">
+      <footer class="footer main-footer container">
          <p class="footer-contacts"> #visitSEDONA <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
          </p>
          <div class="footer-social">
