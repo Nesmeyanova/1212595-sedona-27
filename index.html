@@ -10,7 +10,7 @@
       <body>
             <header class="main-header container">
          <nav class="main-navigation">
-            <a class="main-header-logo"><img src="img/logo.svg" width=100% height="71" alt="Логотип Siti of Sedona"></a>
+            <a class="main-header-logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип Siti of Sedona"></a>
             <ul class="site-navigation">
                <li><a href="">Информация</a></li>
                <li><a href="">Фото и видео</a></li>
@@ -21,9 +21,11 @@
       </header>
       <main class="container">
          <section class="greeting">
+            <h2 class="visually-hidden"> Приветствие</h2>
             <img src="img/welcome.svg" width="459" height="353" alt="Приветственная надпись">
          </section>
           <section class="description">
+            <h2 class="visually-hidden">Описание</h2>
             <p class="description-title">Седона — небольшой городок в Аризоне,
                заслуживающий большего!</p>
             <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -110,17 +112,17 @@
                <div class="adult">
                <label for="number-of-people">Взрослые:</label>
                <div class="add-reduce">
-                 <input type="button" name="add" id="number-of-people">
+                 <button class="btn-reduce" type="button" name="reduce" id="reduce-people" value=""></button>
                   <input type="text" name="people" id="number-of-people" placeholder="2">
-                  <input type="button" name="reduce" id="number-of-people"> 
+                  <button class="btn-add" type="button" name="add" id="add-people" value=""></button>
                </div>
             </div>
             <div class="children">
                <label for="number-of-children">Дети:</label>
                <div class="add-reduce">
-                  <input type="button" name="add" id="number-of-children">
+                  <button class="btn-reduce" type="button" name="reduce" id="reduce-children" value=""></button>
                   <input type="text" name="children" id="number-of-children" placeholder="0">
-                  <input type="button" name="reduce" id="number-of-children">
+                  <button class="btn-add" type="button" name="add" id="add-children" value=""></button>
                </div>
             </div>
             </div>

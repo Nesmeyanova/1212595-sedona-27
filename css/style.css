@@ -426,12 +426,12 @@ input[type="radio"].visually-hidden {
 	background-size: 568px 395px;
 	width: 568px;
 	padding-top: 55px;
-    padding-right: 45px;
+    padding-right: 55px;
     padding-bottom: 55px;
     padding-left: 56px;
 }
 
-.search-form input[type="button"],
+.search-form button[type="button"],
 .search-form input[type="text"] {
 	font-size: 14px;
 	line-height: 26px;
@@ -457,14 +457,49 @@ input[type="radio"].visually-hidden {
 	outline: 2px solid #e5e5e5;
 }
 
-.add-reduce input,
-.add-reduce button {
+.add-reduce input[type="text"],
+.add-reduce button[type="button"] {
 	width: 38px;
 	height: 38px;
 	text-align: center;
+	position: relative;
+}
+
+.btn-reduce::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 3px;
+	background-color: #a9a9a9;
+	top: 50%;
+	left: 40%;
+}
+
+.btn-add::before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 3px;
+	background-color: #a9a9a9;
+	top: 45%;
+	left: 38%;
+}
+
+.btn-add::after {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 3px;
+	background-color: #a9a9a9;
+	top: 46%;
+	left: 38%;
+	transform: rotate(90deg);
 }
 
 .check-in-date {
+	position: relative;
+	display: flex;
+    align-items: center;
 	margin-bottom: 29px;
 }
 
@@ -472,16 +507,20 @@ input[type="radio"].visually-hidden {
 .check-out-date label {
 	display: inline-block;
 	width: 100px;
-	margin-right: 7px;
+	margin-right: 11px;
 }
 
 
 .check-out-date {
 	margin-bottom: 30px;
+	position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .calendar {
 	position: absolute;
+	right: 0;
 	width: 38px;
 	height: 38px;
 	border: none;
@@ -494,6 +533,7 @@ input[type="radio"].visually-hidden {
 
 .calendar:hover svg {
 	fill: #000000;
+	margin-top: 7px;
 }
 .calendar:focus svg {
 	fill: #81b3d2
@@ -551,7 +591,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-	margin-top: -128px;
+	margin-top: -126px;
 	position: relative;
     z-index: 2;
     background-color: rgba(255,255,255,0.9);
@@ -561,7 +601,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
 	font-weight: bold;
-	width: 224px; 
+	width: 270px;
 	display: block;
 	font-size: 21px;
 	line-height: 26px;
@@ -579,7 +619,7 @@ input[type="radio"].visually-hidden {
 .footer-social {
 	text-align: center;
 	padding-right: 61px;    
-	margin-top: 7px;
+	margin-top: -1px;
 
 }
 
@@ -626,7 +666,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	align-items: center;
 	margin: 0;
-	padding-bottom: 8px;
+	padding-bottom: 10px;
+	padding-left: 46px;
 }
 
 .footer-copyright a {
@@ -795,9 +836,9 @@ input:focus+ label::before {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
+  top: -12px;
+  width: 24px;
+  height: 24px;
   background: #ababab;
   border: 10px solid #ffffff;
   border-radius: 50%;
@@ -807,6 +848,7 @@ input:focus+ label::before {
 
 .range-toggle:hover {
   background: #1c4f80;
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
@@ -945,6 +987,7 @@ input:focus+ label::before {
  	margin-bottom: 8px;
  	font-size: 21px;
     line-height: 21px;
+    letter-spacing: 0.4px;
  }
 
 .hotel-details table {
