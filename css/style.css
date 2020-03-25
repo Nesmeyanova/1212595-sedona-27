@@ -526,7 +526,8 @@ input[type="radio"].visually-hidden {
 }
 
 .check-in-date label,
-.check-out-date label {
+.check-out-date label,
+.adult label {
 	display: inline-block;
 	vertical-align: middle;
 	width: 100px;
@@ -565,12 +566,7 @@ input[type="radio"].visually-hidden {
 .adult {
 	display: flex;
 	width: 50%;
-	margin-right: 55px;
 	align-items: center;
-}
-
-.adult label {
-	margin-right: 39px;
 }
 
 .children {
@@ -580,7 +576,8 @@ input[type="radio"].visually-hidden {
 }
 
 .children label {
-	margin-right: 25px;
+	margin-right: 28px;
+    margin-left: auto;
 }
 
 .button-to-find {
@@ -602,6 +599,7 @@ input[type="radio"].visually-hidden {
 .map {
 	width: 1200px;
 	background-image: url(../img/map.jpg);
+	background-color: #add4b4;
 }
 
 .map iframe {
@@ -617,7 +615,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     padding-left: 123px;
     padding-right: 101px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
 }
 
 .main-footer {
@@ -864,10 +862,8 @@ input:focus+ label::before {
 }
 
 .price-controls input {
-	width: 50px;
 	margin: 0;
 	color: inherit;
-	font: inherit;
 	background: none;
 	border: none;
 	margin-left: 4px;
@@ -893,9 +889,9 @@ input:focus+ label::before {
 	position: absolute;
 	top: -10px;
     width: 20px;
-    height: 21px;
+    height: 20px;
 	background: #ababab;
-	border: 10px solid #ffffff;
+	border: 8px solid #ffffff;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 	cursor: pointer;
